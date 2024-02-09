@@ -1,0 +1,104 @@
+* {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  margin: 0;
+}
+.white {
+  color: white;
+}
+
+.lightTypography {
+  color: rgba(75, 106, 155, 1);
+}
+
+.backGroundDark {
+  background-color: rgba(20, 29, 47, 1);
+  height: 100vh;
+}
+.devfinder {
+  display: flex;
+  width: 730px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modeButton {
+  border: none;
+  background-color: transparent;
+}
+.btnMoon {
+  display: flex;
+  gap: 10px;
+}
+.svg {
+  width: 20px;
+}
+.inpBtn {
+  width: 730px;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.inpBtn input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  padding-left: 30px;
+}
+.inpBtn button {
+  border: none;
+  width: 106px;
+  height: 50px;
+}
+.info {
+  display: flex;
+  gap: 50px;
+  background-color: rgba(246, 248, 255, 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 700px;
+  border-radius: 20px;
+}
+.container img {
+  width: 100px;
+  border-radius: 50%;
+}
+.mini {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 800px;
+}
+.mini svg {
+  width: 15px;
+}
+.search {
+  background-color: rgba(0, 121, 255, 1);
+  color: white;
+  border-radius: 10px;
+}
+.rightSide {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 30px;
+}
+.dark {
+  background-color: rgba(30, 42, 71, 1);
+}
+.whiteBg {
+  background-color: white;
+}
