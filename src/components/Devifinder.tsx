@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import { Mode } from "./Mode";
 import { Search } from "./Search";
 import { Card } from "./Card";
+import axios from "axios";
 const defaultUserData: UserData = {
   login: "",
   name: "",
@@ -33,10 +34,14 @@ export const Devifinder = () => {
   const [data, setData] = useState<UserData>(defaultUserData);
   const [user, setUser] = useState("");
 
+  const axiosInstance = axios.create({
+    baseURL: "https://api.github.com",
+  });
+
   async function getData() {
-    fetch(`https://api.github.com/users/${user}`)
-      .then((res) => res.json())
-      .then((data) => setData(data));
+    const response = await axiosInstance(`/users/${user}`);
+    const data = response.data;
+    setData(data);
   }
 
   function handleChange(ev: ChangeEvent<HTMLInputElement>) {
